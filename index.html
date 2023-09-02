@@ -35,47 +35,38 @@
     </pre>
   </body>
 </html> -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Movie</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <style>
-      .btn2{
-        cursor: pointer;
-      }
-      .btn1{
-        cursor: pointer;
-      }
-      .pic {
-        width: 17%;
-        border: none;
-        border-radius: 20px;
-      }
-      body {
-        background-color: rgb(140, 202, 223);
-        font-family: "Courier New", Courier, monospace;
-        font-weight: bold;
-      }
-      .btn1 {
-        background-color: rgb(206, 229, 236);
-        border: none;
-        border-radius: 10px;
-        font-weight: bold;
-      }
-      .btn2 {
-        background-color: rgb(206, 229, 236);
-        border: none;
-        border-radius: 10px;
-        font-weight: bold;
-      }
-      .to-watch {
-        margin-bottom: 0;
-      }
-    </style>
-    <img class="pic" src="Meg 2.jpg" />
+    
+    <nav>
+      <a href="/Meg 2/" target="_blank">Meg 2</a>|
+      <a href="/Spider-Man/" target="_blank">Spider-Man</a>|
+      <a href="/The Blindside/" target="_blank">The Blindside</a>
+
+    </nav>
+    <article>
+      <header>
+        <h1>Watch Movies For Free!!</h1>
+      </header>
+    </article>
+    <section>
+      <h2>Now Showing:</h2>
+    </section>
+    <aside>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi minima ex fugit. Quo laborum reprehenderit iusto illum voluptate, error eaque exercitationem quam provident aperiam dolore aliquid soluta odit fugiat!</p>
+    </aside>
+    <figure>
+      <img class="pic" src="Meg 2.jpg" />
+      <figcaption>Meg 2</figcaption>
+    </figure>
+    
     <h1>Meg 2: The Trench</h1>
     <p>
       An exploratory dive into the deepest depths of the ocean of a daring
@@ -83,7 +74,7 @@
       threatens<br />
       their mission and forces them into a high-stakes battle for survival.
     </p>
-    <hr />
+    <hr/>
     <h3>
       Released: 2023-08-02 <br />Genre: Action, Science Fiction, Horror<br />
       Comedy Casts: Siv Koloudom, Davan Ricky, Nou Chanprasidh, Oeng Chihea
@@ -97,8 +88,53 @@
     <a
       href="https://cineb.rs/watch-movie/watch-meg-2-the-trench-free-98842.9801478"
       target="_blank">
-    </a>
       <button class="btn2">Full Movie</button>
     </a>
+      
+    </a>
+    <form>
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" id="lname" name="lname" /><br />
+
+      <h2>Checkboxes</h2>
+      <p><strong>Select Movie To Watch:</strong> </p>
+      <input type="checkbox" id="m1" name="m1" value="m1" />
+      <label for="m1"> The Blindside</label><br />
+      <input type="checkbox" id="m2" name="m2" value="m2" />
+      <label for="m2"> Meg 2</label><br />
+      <input type="checkbox" id="m3" name="m3" value="m3" />
+      <label for="m3"> Spider-Man</label><br /><br />
+      
+
+      <input type="submit" value="Submit" />
+      <table width="700">
+        <tr>
+          <th width="100">Movie Name</th>
+          <th width="100">Movie Genre</th>
+          <th width="100">Released Date</th>
+        </tr>
+        <tr align = "center">
+          <td>Meg 2</td>
+          <td>Action,Science Fiction</td>
+          <td>02-Aug-2023</td>
+        </tr>
+        <tr align="center">
+          <td>Spider-Man</td>
+          <td>Action</td>
+          <td>03-May-2003</td>
+        </tr>
+        <tr align="center">
+          <td>The Blindside</td>
+          <td>Sport,Drama</td>
+          <td>20-Nov-2009</td>
+        </tr>
+      </table>
+    </form>
+    <footer>
+      <p>Author: Soeng Sokheng</p>
+      <p><a href="https://web.facebook.com/">Soeng Sokheng</a></p>
+    </footer>
   </body>
 </html>
