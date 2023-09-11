@@ -6,51 +6,82 @@
 
   <body>
     <style>
+      body {
+        background-color: rgb(169, 169, 63);
+      }
       h2 {
         text-align: center;
       }
+      .paper {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px 3px white;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 20px;
+        align-items: center;
+      }
+      #fname,
+      #lname,
+      #yoe,
+      #salary,
+      #gen,
+      #edu,
+      #btn {
+        border: 2px solid red;
+        height: 25px;
+        border-radius: 20px;
+      }
+      #btn {
+        width: 200px;
+        cursor: pointer;
+      }
     </style>
-    <h2>Job Application Form</h2>
-    <form action="/form.html The Movie!!">
-      <h3>Your Bio Data:</h3>
-      <label for="fname">First Name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last Name:</label><br />
-      <input type="password" id="pass" name="lname" /><br />
+    <div class="paper">
+      <h2>Job Application Form</h2>
+      <form action="/form.html The Movie!!">
+        <h3>Your Bio Data:</h3>
 
-      <h4>
-        Gender:
-        <select id="gen" name="gender">
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Others">Others</option>
-        </select>
-      </h4>
+        <label for="fname">First Name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
 
-      <h3>Subject Handled</h3>
-      <input type="checkbox" id="sub1" name="sub1" value="Math" />
-      <label for="sub1">Math </label><br />
-      <input type="checkbox" id="sub2" name="sub2" value="History" />
-      <label for="sub2"> History</label><br />
-      <input type="checkbox" id="sub3" name="sub3" value="Chem" />
-      <label for="sub3"> Chemistry</label><br /><br />
+        <h4>
+          Gender:
+          <select id="gen" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+        </h4>
 
-      <label for="yoe">Years of Experiences:</label>
-      <input type="text" id="yoe" name="yoe" /><br />
-      <h4>Previous Salary</h4>
-      <label for="yoe">Salary Details:</label>
-      <input type="text" id="salary" name="salary" /><br />
+        <h3>Subject Handled</h3>
+        <input type="checkbox" id="sub1" name="sub1" value="Math" />
+        <label for="sub1">Math </label><br />
+        <input type="checkbox" id="sub2" name="sub2" value="History" />
+        <label for="sub2"> History</label><br />
+        <input type="checkbox" id="sub3" name="sub3" value="Chem" />
+        <label for="sub3"> Chemistry</label><br /><br />
 
-      <h4>
-        Educational Qualification:
-        <select id="edu" name="edu">
-          <option value="bachelor">Bachelor Degree</option>
-          <option value="master">Master Degree</option>
-          <option value="phd">PHD</option>
-        </select>
-      </h4>
-      <br />
-      <input type="submit" value="Submit" /><br />
-    </form>
+        <label for="yoe">Years of Experiences:</label>
+        <input type="text" id="yoe" name="yoe" /><br />
+        <h4>Previous Salary</h4>
+        <label for="yoe">Salary Details:</label>
+        <input type="text" id="salary" name="salary" /><br />
+
+        <h4>
+          Educational Qualification:
+          <select id="edu" name="edu">
+            <option value="bachelor">Bachelor Degree</option>
+            <option value="master">Master Degree</option>
+            <option value="phd">PHD</option>
+          </select>
+        </h4>
+        <br />
+        <input type="submit" id="btn" value="Submit" /><br />
+      </form>
+    </div>
   </body>
 </html>
