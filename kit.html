@@ -5,30 +5,68 @@
   </head>
   <style>
     body {
-      background-color: lightgray;
+      background-color: rgb(168, 56, 56);
+      color: white;
+      font-size: 17px;
+    }
+    .n1,
+    .n2,
+    .n3 {
+      width: 17%;
+      color: white;
+      background-color: black;
+      border: 1px solid;
     }
     .pic {
-      width: 50%;
+      width: 60%;
+      margin: auto;
+      border: 5px solid;
     }
-    aside {
+    #aside {
       width: 30%;
-      padding-left: 15px;
-      margin-left: 15px;
+      padding: 15px;
       float: right;
+      background-color: black;
+      margin: 20px;
+      border: 10px solid white;
+    }
+    #link {
+      color: white;
+    }
+    .header {
+      text-align: center;
+      background-color: black;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      border: 10px solid white;
+      padding: 5px;
+      height: 50%;
+    }
+    figure {
+      margin-left: inherit;
     }
   </style>
   <body>
     <article>
       <header>
-        <h1>Welcome to, KIT</h1>
+        <div class="header">
+          <h1>WELCOME</h1>
+          <h1>KIRIROM INSTITUDE OF TECHNOLOGY</h1>
+        </div>
       </header>
-      <nav>
-        <a href="/Why KIT?/" target="_blank">Why KIT?</a>|
-        <a href="/Campus Life/" target="_blank">Campus Life</a>|
-        <a href="/Academic/" target="_blank">Academic</a>
-      </nav>
+      <hr />
+      <div>
+        <nav>
+          <a class="n1" href="/Why KIT?/" target="_blank">Why KIT?</a>
+          <br />
+          <a class="n2" href="/Campus Life/" target="_blank">Campus Life</a>
+          <br />
+          <a class="n3" href="/Academic/" target="_blank">Academic</a>
+        </nav>
+      </div>
+      <hr />
       <section>
-        <aside>
+        <aside id="aside">
           Kirirom Institute of Technology (KIT) is located in the heart
           <br />
           of Kirirom National Park, a lush rainforest in Cambodia. <br />The
@@ -48,10 +86,11 @@
       <img class="pic" src="kit.jpg" />
       <figcaption>Kirirom Institute of Technology</figcaption>
     </figure>
+    <hr />
 
     <footer>
       <p>Author: Soeng Sokheng, Batch 11</p>
-      <a href="https://kit.edu.kh/">Visit Our School!!!</a>
+      <a id="link" href="https://kit.edu.kh/">Visit Our School!!!</a>
     </footer>
   </body>
 </html>
