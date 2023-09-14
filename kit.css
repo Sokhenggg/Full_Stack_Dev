@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(168, 56, 56);
+  color: white;
+  font-size: 17px;
+}
+.n1,
+.n2,
+.n3 {
+  width: 17%;
+  color: white;
+  background-color: black;
+  border: 1px solid;
+}
+.pic {
+  width: 60%;
+  margin: auto;
+  border: 5px solid;
+}
+#aside {
+  width: 30%;
+  height: 100px;
+  padding: 15px;
+  float: right;
+  background-color: black;
+  margin: 20px;
+  border: 10px solid white;
+  overflow: auto;
+}
+#link {
+  color: white;
+}
+.header {
+  text-align: center;
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 10px solid white;
+  padding: 5px;
+  height: 50%;
+}
+figure {
+  margin-left: inherit;
+}
