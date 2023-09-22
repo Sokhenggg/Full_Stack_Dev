@@ -18,19 +18,50 @@ article {
 header {
   text-decoration: underline;
 }
+a {
+  text-decoration: none;
+}
 
-.nav {
-  background-color: white;
+li a {
+  display: block;
   color: black;
+  text-align: center;
+  padding: 14px 16px;
+  animation-name: text;
+  animation-duration: 4s;
+}
+@keyframes text {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+li a:hover:not(.active) {
+  border-radius: 10px;
+  background-color: rgb(140, 202, 223);
+}
+ul {
+  background-color: white;
   margin: 0;
   padding: 0;
-  width: fit-content;
+  width: 30%;
   text-align: center;
-  border: 3px solid;
+  border-radius: 10px;
+  animation-name: example;
+  animation-duration: 4s;
 }
-a:hover {
-  color: black;
+
+@keyframes example {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
 }
+
 a:active {
   color: red;
 }
