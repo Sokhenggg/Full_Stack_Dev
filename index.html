@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Movie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
   </head>
-
   <body>
       <ul class="nav">
         <li><a href="#home" target="_blank">Home</a></li>
-        <li><a href="#Contact" target="_blank">Contact</a></li>
+        <li><a href="#contact" target="_blank">Contact</a></li>
         <li><a href="#about" target="_blank">About Us</a></li>
       </ul>
     <article>
@@ -16,13 +17,12 @@
         <h1>Movies</h1>
       </header>
     </article>
-    <h1>LOGIN</h1>
+    <h1>Login</h1>
     <label for="uname">Username:</label><br />
-      <input type="text" id="uname" name="uname" /><br />
-      <label for="pass">Password:</label><br />
-      <input type="password" id="pass" name="pass" /><br />
-      <hr>
-      <input type="d"
+    <input class="input" autocomplete="off" type="text" placeholder="A-Z" id="uname" name="uname" /><br />
+    <label for="pass">Password:</label><br />
+    <input class="input" type="password" placeholder="0-9" id="pass" name="pass" /><br />
+    <hr>
     <section>
       <h2>Now Showing:</h2>
     </section>
@@ -50,54 +50,34 @@
         </tr>
       </table>
     </div>
-    
     <figure>
-      <div class="poster">
-        <div class="poster1">
+      <div class="poster">        
           <img class="pic" src="Meg 2.jpg" />
-          <figcaption>Meg 2</figcaption>
-        </div>
-        <div class="poster1">
           <img class="pic" src="spiderman.jpg">
-          <figcaption>Spider-Man</figcaption>
-        </div>  
+          <img class="pic1" src="thebls.jpg">
       </div>
     </figure>
     <h1>Meg 2: The Trench</h1>
       <p class="descript">
         An exploratory dive into the deepest depths of the ocean of a daring
-        research<br />team spirals into chaos when a malevolent mining operation
-        threatens<br />
+        research team spirals into chaos when a malevolent mining operation
+        threatens
         their mission and forces them into a high-stakes battle for survival.
       </p>
+      <hr>
     <h1>Spider-Man</h1>
-    
       <p class="descript">
         After being bitten by a genetically altered spider, nerdy high school<br> student Peter Parker is endowed with amazing powers.
       </p>
-    
-    
     <hr/>
-    <h3>
-      Released: 2023-08-02 <br />Genre: Action, Science Fiction, Horror<br />
-      Comedy Casts: Siv Koloudom, Davan Ricky, Nou Chanprasidh, Oeng Chihea
-    </h3>
+    <div class="release-date">
+      <p>
+        Released: 2023-08-02 <br />Genre: Action, Science Fiction, Horror<br />
+        Comedy Casts: Siv Koloudom, Davan Ricky, Nou Chanprasidh, Oeng Chihea
+      </p>
+    </div>
     <hr />
-    
-    <h1 class="to-watch">To Watch:</h1>
-    <a href="https://youtu.be/dG91B3hHyY4?si=jdbNz0eCHm4WoV1z" target="_blank">
-      <button class="btn1">Trailer</button></a>
-
-    <a
-      href="https://cineb.rs/watch-movie/watch-meg-2-the-trench-free-98842.9801478" target="_blank">
-      <button class="btn2">Full Movie</button></a>
-      
-    </a>
-    <hr>
-    
     <form>
-      
-
       <h1>Checkboxes</h1>
       <p><strong>Select Movie To Watch:</strong> </p>
       <input type="checkbox" id="m1" name="m1" value="m1" />
@@ -106,14 +86,41 @@
       <label for="m2"> Meg 2</label><br />
       <input type="checkbox" id="m3" name="m3" value="m3" />
       <label for="m3"> Spider-Man</label><br /><br />
-      
-
-      <input type="submit" id="submit" value="Submit" />
-      
     </form>
+    <hr>
+    <h1 class="to-watch">To Watch:</h1>
+    <a href="https://youtu.be/dG91B3hHyY4?si=jdbNz0eCHm4WoV1z" target="_blank">
+      <button class="btn1">Trailer</button></a>
+    <a
+      href="https://cineb.rs/watch-movie/watch-meg-2-the-trench-free-98842.9801478" target="_blank">
+      <button class="btn2">Full Movie</button></a>
+    </a>
+    
+    <hr>
+    
+    <div class="pagination">
+     
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      
+    </div>
+    <hr>
+    <p id="demo1"></p>
     <footer>
       <p>Author: Soeng Sokheng</p>
-      <p><a href="https://web.facebook.com/">Soeng Sokheng</a></p>
     </footer>
+    
+    <script>
+      let a,b,c;
+      a = 5;
+      b = 6;
+      c = a +b;
+      document.getElementById("demo1").innerHTML="The amount of viewers are "+ c + ".";
+      
+    </script>
   </body>
 </html>
